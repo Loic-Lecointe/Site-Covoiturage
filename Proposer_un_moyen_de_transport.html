@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proposer un moyen de transport</title>
+<link rel="stylesheet" href="./css/annonce.css" />
+</head>
+
+<body>
+	<header>
+		<img src="images/logo.jpg" alt="logo" width="78,4" height="78,4" class="center"/>
+		<a href="Accueil.html">Accueil</a>
+		<a href="Consultation_trajets.html">Consultation trajets</a>
+		<a href="Location_de_véhicule.html">Location de véhicule</a>
+		<a href="Proposer_un_moyen_de_transport.html">Proposer un moyen de transport</a> 	
+	</header>
+
+	<form>
+		<section class="intro">
+			<h1><span style="background:#b4b8b4;">Publier une annonce</span></h1>
+			<h2><span style="background:#b4b8b4;">Commencez votre annonce</span></h2>
+			<h3><span style="background:#b4b8b4;">Je possède:</span> </h3>
+			
+			<input type="radio" id="moto" name="choixtr" value="moto">
+			<label for="moto" ><span style="background:#dddddd;">Moto</span>  </label> 
+			<input type="radio" id="voiture" name="choixtr" value="voit">
+			<label for="voiture" ><span style="background:#dddddd;">voiture</span> </label>
+			
+		</section>
+
+		<section class=dp>
+
+			<label for="depart"><span style="background:#dddddd;">Lieu de depart</span>  </label>
+			<input type="text" required> 
+
+			<label for="datedepart"><span style="background:#dddddd;">Date de depart</span>  </label>
+			<input type="text" required> 
+
+			<label for="heuredepart"><span style="background:#dddddd;">Heure de depart</span>  </label>
+			<input type="text" required>
+		
+		</section>
+		<div class="retour">
+			<input type="checkbox">
+			<label for="datedepart" ><span style="background:#dddddd;">retour</span></label>
+		</div>
+			
+
+		<section class="ar">
+			<label for="arrive"><span style="background:#dddddd;">Lieu d'arrivé</span></label>
+			<input type="text" required>
+				
+			<label for="dateAr"><span style="background:#dddddd;">Date de retour</span>  </label>
+			<input type="text" required>
+
+			<label for="heure1r"> <span style="background:#dddddd;">Heure de retour </span></label>
+			<input type="text" required>
+
+		</section>
+		
+		<section class="passager">
+			<label for="passager"> Combien de passager pouvez vous prendre :</label>
+			<select name="pass" id="pass">
+			<option value="1">1</option>
+			<option value="1">2</option>
+			<option value="2">3</option>
+			<option value="3">4</option>
+			</select>
+		</section>
+		
+		<section class="prix">
+			<label for="arrive"><span style="background:#dddddd;">Participation de</span>  </label> 
+			<input type="text" required id="prix"><span style="background:#dddddd;">£ par passager</span> 
+
+			<h1><span style="background:#b4b8b4;">Laissez un message visible par tous dans votre annonce</span></h1>
+			<textarea id="msg" placeholder="Présentez vous, qui etes vous ..."> </textarea>	
+			
+			<input type="submit" value="Envoyer" id="submit">
+		</section>	
+		
+	</form>
+	
+	<footer>
+		Covoiturage® mentions légales
+	</footer>
+	
+</body>
+
+</html>

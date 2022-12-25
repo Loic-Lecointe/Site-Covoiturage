@@ -1,0 +1,260 @@
+
+body {
+    margin:0px;
+    padding: 0;
+    background-color: #fff;
+}
+/*///////////header///////////*/
+body > header{
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    width:100%;
+	height:74px;
+	background-color:#ae2573;
+    position: fixed;
+    top: 0;
+}
+header > a{
+    text-decoration: none;
+    color:white;
+    font-size:larger;
+}
+/*///////////footer///////////*/
+body > footer{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    width:100%;
+	height:5%;
+	background-color:#ae2573;
+    position: fixed;
+    bottom: 0;
+}
+
+/*///////////Accueil///////////*/
+.perso{
+    display: grid;
+    background-color: #343a40;
+    margin-bottom: 2%;
+    margin-top: 6%;
+    margin-left: 5%;
+    margin-right: 5%;
+    color:white;
+}
+
+.perso > .perso2{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.perso > .grid-container{
+    display:grid;
+    grid-template-columns: 34% 32% 34% ;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.perso > .grid-container{
+    text-align: center;
+    color: white;
+}
+
+.perso > .grid-container > .around{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.trajet{
+    display: grid;
+    background-color: #343a40;
+    margin-bottom: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    color:white;
+}
+
+.trajet > .trajet2 {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 4px solid black;
+}
+
+.trajet > section > img{
+    margin-right: 4%;
+    margin-left: 2%;
+}
+
+.trajet > section > h2{
+    margin-left: 5%;
+}
+
+.trajet > button > a{
+    color: white;
+}
+
+.trajet > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trajet > div > button > a{
+    color: white;
+    text-decoration: none;
+}
+
+.transport{
+    display: grid;
+    background-color: #343a40;
+    margin-bottom: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    color:white;
+}
+
+.transport > button > a{
+    color: white;
+}
+.transport >.images{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2%;
+}
+.transport > .texte{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1%;
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+}
+
+.justi{
+    display: grid;
+    background-color: #343a40;
+    margin-bottom: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.justi > .justi2 {
+    margin-left: 5% ;
+    color: white;
+}
+
+.justi > .justi2 > h2 {
+    text-decoration: underline;
+}
+
+.justi > .justi2 > p {
+    display: flex;
+    justify-content: start;
+}
+
+.justi > .justi2 > .attention{
+    text-decoration:underline;
+    color: red;
+}
+
+.contact{
+    display: grid;
+    background-color: #343a40;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    color:white;
+}
+
+h1{
+    font-size:50px;
+}
+
+.contact > .contact2{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 100%;
+    cursor: pointer;
+}
+  
+.button1 {
+    background-color: #ae2573;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*/////////Consultation_trajets////////*/
+main{
+    margin-top: 8%;
+    margin-bottom: 5%;
+}
+main > h1{
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+.parcourt{
+    display: grid;
+    background-color: #343a40;
+    margin-left: 5%;
+    margin-right: 5%;
+    color:white;
+    margin-bottom: 2%;
+}
+.parcourt > .parcourt2 {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1%;
+}
+.parcourt > .parcourt2 > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin-left: 5%;
+}
+.parcourt > .parcourt2 > div > h6{
+    font-size: 40px;
+}
+.parcourt > .parcourt2 > img {
+    margin-right: 2%;
+}
+.parcourt > .parcourt2 > section {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.C2etoiles{
+    background:grey;
+    display:inline-block;
+    cursor:pointer;
+}
+.C2etoiles:hover{
+    background:yellow;
+}
+.C2etoiles div{
+    display:inline-block;
+    padding:5px;
+}
+.C2etoiles div::after{
+    content:"\002605"; /* une étoile en Unicode */
+}
